@@ -1,0 +1,11 @@
+<?php
+// Sesuaikan dengan setting MySQL (XAMPP default: password kosong)
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "latihan";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
